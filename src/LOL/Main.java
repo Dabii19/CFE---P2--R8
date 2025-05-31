@@ -28,7 +28,7 @@ public class Main {
 
 
         while (equipoSigueVivo(equipo1) && equipoSigueVivo(equipo2)) {
-            System.out.println("\n--- RONDA " + roundNumber + " ---");
+            System.out.println("--- RONDA " + roundNumber + " ---");
 
             // Turno del equipo 1
             Campeon atacante1 = obtenerVivoAleatorio(equipo1, rand);
@@ -62,7 +62,7 @@ public class Main {
             roundNumber++;
         }
 
-        System.out.println("\n--- FIN DE LA BATALLA ---");
+        System.out.println("--- FIN DE LA BATALLA ---");
         // Determine the winner
         if (equipoSigueVivo(equipo1)) {
             System.out.println("¡Ganó el Equipo 1!");
