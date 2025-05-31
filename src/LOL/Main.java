@@ -24,11 +24,11 @@ public class Main {
 
         System.out.println("--- COMIENZA LA BATALLA ---");
 
-        int roundNumber = 1;
+        int rondaNumero = 1;
 
 
         while (equipoSigueVivo(equipo1) && equipoSigueVivo(equipo2)) {
-            System.out.println("--- RONDA " + roundNumber + " ---");
+            System.out.println("--- RONDA " + rondaNumero + " ---");
 
             // Turno del equipo 1
             Campeon atacante1 = obtenerVivoAleatorio(equipo1, rand);
@@ -59,7 +59,7 @@ public class Main {
                 break; // End the battle
             }
 
-            roundNumber++;
+            rondaNumero++;
         }
 
         System.out.println("--- FIN DE LA BATALLA ---");
